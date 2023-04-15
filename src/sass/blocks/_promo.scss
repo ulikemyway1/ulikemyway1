@@ -1,0 +1,30 @@
+.promo {
+    position: relative;
+    min-height: 800px;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+    &_links {
+        margin-top: 25px;
+    }
+    &_link {
+        padding: 12px 26px;
+        font-weight: 700;
+        font-size: 14px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+          
+    }
+    .nobg {
+        background: none;
+        box-shadow: none;
+        
+    }
+};
+button,
+button:active,
+button:focus  {
+  border:none;
+  box-shadow: none;
+}

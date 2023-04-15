@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 50px;
+    top: 226px;
+    height: 340px;
+    &_divider {
+        width: 2px;
+        height: 70px;
+        background: black;
+    }
+    &_text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        writing-mode:vertical-lr;
+        transform: rotate(180deg);
+    }
+}
