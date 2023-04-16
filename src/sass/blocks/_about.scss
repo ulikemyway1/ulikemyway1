@@ -25,10 +25,11 @@
         row-gap: 50px;
         column-gap: 50px;
         &_item {
-            display: flex;
+            display: grid;
             position: relative;
-            width: 100%;
-            margin-right: 50px;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+            
             &:before {
                 content: '';
                 display: block;
@@ -37,7 +38,7 @@
                 border-radius: 100%;
                 background: $main-color;
                 position: absolute;
-                top: 0;
+                top: -5px;
                 left: 0;
                 z-index: -1;
             }
@@ -46,7 +47,7 @@
                 width: 25px;
                 height: 23.45px;
                 margin-right: 20px;
-                margin-top: 15px;
+                margin-top: 10px;
                 margin-left: 15px;
                 
             }
