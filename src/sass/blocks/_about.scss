@@ -1,0 +1,73 @@
+.about {
+    padding-top: 120px;
+    &_wrapper {
+        display: grid;
+        grid-template-columns: 400px 580px;
+       column-gap: 68px;
+       row-gap: 40px;
+        grid-template-rows: 240px auto;
+        grid-template-areas: 'photo text1'
+                            'photo exper';
+    }
+    &_photo {
+        grid-area: photo;
+    }
+    &_text {
+        grid-area: text1;
+        
+    }
+    &_exper {
+        grid-area: exper;
+        width: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        &_item {
+            display: flex;
+            position: relative;
+            width: 260px;
+            margin-right: 50px;
+            &:before {
+                content: '';
+                display: block;
+                width: 36px;
+                height: 36px;
+                border-radius: 100%;
+                background: $main-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &_icon {
+                position: relative;
+                width: 25px;
+                height: 23.45px;
+                margin-right: 20px;
+                margin-top: 15px;
+                margin-left: 15px;
+                
+            }
+        &_descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            span {
+                display: block;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+        }
+        }
+    }
+    &_descr {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 24px;
+    }
+    &_subtitle {
+        margin-top: 8px;
+    }
+
+}
