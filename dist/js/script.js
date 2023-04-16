@@ -1,13 +1,12 @@
-const humbrger = document.querySelector('.humbrger'),
-        menu = document.querySelector('.menu'),
-        closeQ = document.querySelector('.menu_close');
+const hamburger = document.querySelector('.humbrger'),
+     closeQ = document.querySelector('.menu_close'),
+     menu = document.querySelector('.menu');
 
-humbrger.addEventListener('click', () => {
-    menu.classList.add('active')
+hamburger.addEventListener('click', ()=> {
+    menu.classList.add('active');
 });
 
-
-closeQ.addEventListener('click', () => {
-    menu.classList.remove('active')
+closeQ.addEventListener('click', ()=> {
+    menu.classList.remove('active');
 });
 
