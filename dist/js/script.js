@@ -10,3 +10,9 @@ closeQ.addEventListener('click', ()=> {
     menu.classList.remove('active');
 });
 
+const counters = document.querySelectorAll('.work_scale_item_header_percent'),
+      lines = document.querySelectorAll('.work_scale_item_scale-orange');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
