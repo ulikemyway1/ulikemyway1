@@ -1,5 +1,7 @@
 .subtitle {
-    padding-left: 10px;
+   
+    text-align: center;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -14,8 +16,29 @@
         border-radius: 100%;
         position: absolute;
         z-index: -1;
-        left: 0;
-        top: -8px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-7px);
+    }
+    &_left {
+        text-align: left;
+        padding-left: 14px;
+        &:before {
+            left: 20px;
+        }
+    }
+    &_line {
+        position: relative;
+        &::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            display: block;
+            background: $main-color;
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -28,6 +51,7 @@ h1 {
 }
 
 .title {
+    text-align: center;
     position: relative;
     font-weight: 700;
     font-size: 36px;
@@ -40,6 +64,16 @@ h1 {
         display: block;
         background: $main-color;
         position: absolute;
-        bottom: 0;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &_left {
+        text-align: left;
+        &::before {
+            left: 0;
+            transform: none;
+            bottom: -6px;
+        }
     }
 }
